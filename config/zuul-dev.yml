@@ -4,10 +4,7 @@ spring:
     name: zuul
   cloud:
     config:
-      server:
-        git:
-          uri: https://github.com/wukaichun1/sp-config
-          searchPaths: config
+      override-none: true
     
 server:
   port: 3001
