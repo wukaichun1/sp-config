@@ -1,6 +1,12 @@
 spring:
   application:
     name: item-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wukaichun1/sp-config
+          searchPaths: config
 server:
   port: 8001
 eureka:
